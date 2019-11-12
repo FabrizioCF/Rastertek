@@ -1,0 +1,218 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 16, 2019, 4:56:55 PM
+    Author     : Fabrizio Cruz
+*/
+
+/* source-code-pro-regular - latin */
+@font-face {
+    font-family: 'Source Code Pro';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Source Code Pro'), local('SourceCodePro-Regular'),
+        url('../fonts/source-code-pro-v9-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/source-code-pro-v9-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* overpass-300 - latin-ext_latin */
+@font-face {
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Overpass Light'), local('Overpass-Light'),
+        url('../fonts/overpass-v3-latin-ext_latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/overpass-v3-latin-ext_latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* overpass-regular - latin-ext_latin */
+@font-face {
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Overpass Regular'), local('Overpass-Regular'),
+        url('../fonts/overpass-v3-latin-ext_latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/overpass-v3-latin-ext_latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* overpass-600 - latin-ext_latin */
+@font-face {
+    font-family: 'Overpass';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Overpass SemiBold'), local('Overpass-SemiBold'),
+        url('../fonts/overpass-v3-latin-ext_latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/overpass-v3-latin-ext_latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+
+.Raster-container, nav, .Raster-footer, .Raster-main,
+.Raster-sidebar-tema, .Raster-login, .Raster-bread{
+    background-color: #3e3e3e;
+}
+
+.Raster-labels, footer a, .Raster-sidebar-tema,
+.Raster-content, .Raster-login{
+    color: #cccccc;
+}
+
+.Raster-btn{
+    color: #3e3e3e;
+    background-color: #08A28C;
+    border-color: #08A28C;
+}
+
+.Raster-btn:hover{
+    background-color: rgba(8, 162, 139, 0.603);
+}
+
+.Raster-btn-outline{
+    color: #08A28C;
+    border-color: #08A28C;
+}
+
+.Raster-btn-outline:hover{
+    color: #3e3e3e;
+    background-color: #08A28C;
+}
+
+.Raster-footer{
+    border-top: 2px solid #050505;
+}
+
+.Raster-input{
+    border-color: #08A28C;
+}
+
+figcaption.Raster-labels{
+    text-align: center;
+    padding-left: 2em;
+}
+
+.Raster-labels{
+
+}
+
+footer a{
+
+}
+
+footer a:hover{
+    color: #08A28C;
+}
+
+.Raster-main{
+    position: relative;
+}
+
+.Raster-sidebar{
+    position: fixed;
+    max-width: 16em;
+}
+
+.Raster-sidebar-tema{
+    border: none;
+}
+
+.Raster-sidebar-subtema{
+
+}
+
+nav.navbar.navbar-light{
+    border-bottom:2px solid #050505;
+}
+
+.Raster-content{
+    font-family: Overpass;
+    background-color: #4C4C4C;
+}
+
+.subTema-actual{
+    color: #08a28c;
+}
+
+.list-group-item{
+    cursor: pointer !important;
+}
+
+.match{
+    border: 4px solid #99ff99 !important;
+}
+
+.notMatch{
+    border: 4px solid #ff1a1a !important;
+}
+
+.login{
+    position: absolute;
+    top: 50%;
+    left: 13%;
+    transform: translateY(-50%);
+}
+
+#nombreUs{
+    display: inline;
+    color: #cccccc;
+}
+
+.Raster-bread{
+
+}
+
+.Raster-Navbar{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.nuevo{
+    font-family: Source Code Pro;
+    color: #08a28c;
+}
+
+.anterior{
+    font-family: Source Code Pro;
+    color: #07BCF7;
+}
+
+.Raster-content h2, .Raster-content h4{
+    font-weight: 600;
+}
+
+.tarjeta-tema {
+    background-color: #4C4C4C;
+    color: #cccccc;
+}
+
+.tarjeta-tema h6{
+    text-align: center;
+}
+
+.tarjeta-tema img{
+    width: 5rem;
+}
+
+.tema-template{
+    display: inline-block;
+    width: 30%;
+}
+
+.tema-template a:hover{
+    color: #08A28C;
+}
+
+.temas-hidden{
+    display: none;
+}
+
+.ver-todos:hover{
+    color: #08A28C !important;
+    cursor: pointer;
+}
+
+.temasIndex{
+    color: #ccc;
+}
