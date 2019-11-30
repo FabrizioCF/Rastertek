@@ -7,15 +7,13 @@ package Utils;
 
 import com.sun.corba.se.impl.protocol.AddressingDispositionException;
 import java.util.Date;
-import java.util.Properties;
- 
+import java.util.Properties; 
 import javax.mail.Authenticator;
 import javax.mail.Message;
 import javax.mail.MessagingException;
 import javax.mail.PasswordAuthentication;
 import javax.mail.Session;
 import javax.mail.Transport;
-import javax.mail.internet.AddressException;
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 
@@ -54,7 +52,8 @@ public class EmailUtility {
         msg.setRecipients(Message.RecipientType.TO, toAddresses);
         msg.setSubject(subject);
         msg.setSentDate(new Date());
-        msg.setText(message);
+        //msg.setText(message);
+        msg.setContent(message, "text/html; charset=utf-8");
 
         // sends the e-mail
         Transport.send(msg);

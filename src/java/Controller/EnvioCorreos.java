@@ -7,7 +7,6 @@ package Controller;
 
 import Utils.EmailUtility;
 import java.io.IOException;
-import java.io.PrintWriter;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -47,7 +46,14 @@ public class EnvioCorreos extends HttpServlet {
         // reads form fields
         String recipient = request.getParameter("correo");
         String subject = "Bienvenido a Rastertek!";
-        String content = "Esto es un correo de prueba.";
+        //String content = "Esto es un correo de prueba.";
+        String content = "<div style='background-color:#3e3e3e;'>"
+                + "<h1 style='color:#b2dbca; text-align:center'>Bienvenido!</h1>"
+                + "<p style='color:#cccccc; text-align: center;'>Gracias por subscribirse a nuestro programa de noticias!</p>"
+                + "<p style='color:#cccccc; text-align: center;'>Usted será notificado cada vez que nuevo contenido sea agregado a la página.</p>"
+                + "<br/><br/><br/>"
+                + "<p style='color:#b2dbca; font-weight:800; font-size:12px; text-align: center;'> Enviado automáticamente por el equipo de Rastertek SA de CV </p>"
+                + "</div>";
 
         String resultMessage = "";
 
@@ -60,10 +66,7 @@ public class EnvioCorreos extends HttpServlet {
             resultMessage = "There were an error: " + ex.getMessage();
         } finally {
             request.setAttribute("emailMessage", resultMessage);
-            //request.getRequestDispatcher("/CargaIndex").forward(request, response);
             request.getRequestDispatcher("CargaIndex").forward(request, response);
-            //getServletContext().getRequestDispatcher("/CargaIndex").forward(
-            //        request, response);
         }
     }
 }

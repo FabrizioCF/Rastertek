@@ -158,8 +158,12 @@ nav.navbar.navbar-light{
     color: #cccccc;
 }
 
-.Raster-bread{
+.Raster-bread-item{
+    color: #07BCF7;
+}
 
+.Raster-bread-item:hover{
+    color: #08A28C;
 }
 
 .Raster-Navbar{
@@ -208,11 +212,21 @@ nav.navbar.navbar-light{
     display: none;
 }
 
-.ver-todos:hover{
-    color: #08A28C !important;
+.tarjeta-tema .temas-hidden + a:hover{
+    color:  #07BCF7!important;
     cursor: pointer;
+}
+
+.ver-todos{
+    color: #08A28C;
 }
 
 .temasIndex{
     color: #ccc;
 }
+
+.raster-badge{
+    background-color: #07BCF7;
+    color: #3e3e3e;
+}
+

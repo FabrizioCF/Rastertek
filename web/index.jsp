@@ -18,15 +18,16 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Rastertek - Home</title>
+
         <jsp:include page="templates/Metadata_Gral.jsp"/>
     </head>
     <body class="Raster-container">
         <%
             if (request.getAttribute("emailMessage") != null) {
-                respuestaMail = (String)request.getAttribute("emailMessage");
+                respuestaMail = (String) request.getAttribute("emailMessage");
         %>
         <script>
-            alert(<%= respuestaMail %>);
+            alert(<%= respuestaMail%>);
         </script>
         <%
             }
@@ -43,7 +44,7 @@
                 <%
                     for (Tutorial tut : listaTutorial) {
                 %>
-                <div class="card border-info my-3 mx-auto tarjeta-tema col-5" >
+                <div class="card border-info my-3 mx-auto col-5 tarjeta-tema" >
                     <h4 class="card-header bg-transparent border-info"><%= tut.getNombre()%></h4>
                     <div class="card-body tarjeta-tema">
                         <%
@@ -84,7 +85,7 @@
                             }
                         %>
                     </div>
-                    <a  class="card-footer bg-transparent border-info py-1 text-right ver-todos">
+                    <a href="CargaIndex?verTutorial=3" class="card-footer bg-transparent border-info py-1 text-right ver-todos">
                         Ver todos
                     </a>
                 </div>

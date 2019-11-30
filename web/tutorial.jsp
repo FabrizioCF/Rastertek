@@ -52,7 +52,7 @@
                             <li class="list-group-item d-flex justify-content-between align-items-center
                                 Raster-sidebar-tema">
                                 <%= tut.getNombre()%>
-                                <span class="badge badge-primary badge-pill"><%= tut.getListaTema().size()%></span>
+                                <span class="badge badge-primary badge-pill raster-badge"><%= tut.getListaTema().size()%></span>
                             </li>
                             <ul class="list-group px-3 Raster-sidebar-subtema">
                                 <%
@@ -74,7 +74,7 @@
                 <div class="col-8 my-3">
                     <div class="container Raster-content" id="Tut0102">
                         <% nombre = GetTemaImg.getNombreTema(idTemaClick); %>
-                        <h2><%=nombre%></h2>
+                        <h2 id="tema_header"><%=nombre%></h2>
                         <jsp:include page="Tutoriales/Tut0102.jsp"/>
                     </div>
                 </div>
